@@ -8,14 +8,14 @@
         /* Canva font definitions */
         @font-face {
             font-family: 'CanvaSansDisplay-Regular';
-            src: url('../Font/CanvaSansDisplay-Regular.woff') format('woff');
+            src: url('Font/CanvaSansDisplay-Regular.woff') format('woff');
             font-weight: normal;
             font-display: swap;
         }
 
         @font-face {
             font-family: 'CanvaSans-Medium';
-            src: url('../Font/CanvaSans-Medium.woff') format('woff');
+            src: url('Font/CanvaSans-Medium.woff') format('woff');
             font-weight: 500;
             font-display: swap;
         }
@@ -205,7 +205,7 @@
             transform: translate(-50%, -50%) scale(0.8);
             transition: all 0.3s cubic-bezier(0.43, 0, 0.17, 1);
         ">
-            <img src="../Asset/Cursor.svg" alt="Blue Cursor" style="width: 100%; height: 100%;">
+            <img src="Asset/Cursor.svg" alt="Blue Cursor" style="width: 100%; height: 100%;">
         </div>
 
         <!-- Tracking Cursor (Pink) -->
@@ -219,7 +219,7 @@
             transform: translate(0, 0) scale(1);
             transition: opacity 0.2s ease;
         ">
-            <img src="../Asset/Collab Cursor.svg" alt="Pink Cursor" style="width: 100%; height: 100%;">
+            <img src="Asset/Collab Cursor.svg" alt="Pink Cursor" style="width: 100%; height: 100%;">
         </div>
 
         <!-- Image Gallery Container -->
@@ -249,7 +249,7 @@
                 transition-delay: 0ms;
                 z-index: 1;
             ">
-                <img src="../Asset/1.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="Asset/1.png" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
 
             <!-- Image Holder 2 (Left - mostly off-screen after animation) -->
@@ -268,7 +268,7 @@
                 transition-delay: 0ms;
                 z-index: 1;
             ">
-                <img src="../Asset/2.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="Asset/2.png" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             
             <!-- Image Holder 3 (Left edge bleed) -->
@@ -287,7 +287,7 @@
                 transition-delay: 50ms;
                 z-index: 2;
             ">
-                <img src="../Asset/3.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="Asset/3.png" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             
             <!-- Image Holder 4 (Center - main target) -->
@@ -308,7 +308,7 @@
                 cursor: pointer;
                 box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
             ">
-                <img id="center-hosted-image" src="../Asset/4A.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <img id="center-hosted-image" src="Asset/4A.png" style="width: 100%; height: 100%; object-fit: cover;">
                 
                 <!-- SVG Gradient Swipe Overlay removed -->
             </div>
@@ -329,7 +329,7 @@
                 transition-delay: 150ms;
                 z-index: 2;
             ">
-                <img src="../Asset/5.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="Asset/5.png" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
 
             <!-- Image Holder 6 (Far right - for drag scrolling) -->
@@ -348,7 +348,7 @@
                 transition-delay: 200ms;
                 z-index: 1;
             ">
-                <img src="../Asset/3.png" style="width: 100%; height: 100%; object-fit: cover;">
+                <img src="Asset/3.png" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
         </div>
     </div>
@@ -657,7 +657,7 @@
             
             // Change to 4B and trigger sparkles simultaneously after 50ms (at the smallest scale)
             setTimeout(() => {
-                centerImage.setAttribute('src', '../Asset/4B.png');
+                centerImage.setAttribute('src', 'Asset/4B.png');
                 createSparklesOnCenter();
                 
                 // Scale container back to 100%
